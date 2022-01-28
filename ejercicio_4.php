@@ -6,7 +6,7 @@
     </head>
     <body>
         <h3>Ejercicio 4</h3>
-        <p>Escribe un programa que calcule el salario semanal de un trabajador en base a las horas trabajadas. Se pagarán 12 euros por hora.</p>
+        <p>Vamos a ampliar uno de los ejercicios de la relación anterior para considerar las horas extras. Escribe un programa que calcule el salario semanal de un trabajador teniendo en cuenta que las horas ordinarias (40 primeras horas de trabajo) se pagan a 12 euros la hora. A partir de la hora 41, se pagan a 16 euros la hora.</p>
         <form action="ejercicio_4.php" method="post">
             <p>Horas trabajadas: 
                 <input type="text" name="num1" />
