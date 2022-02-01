@@ -18,8 +18,6 @@
             $a = $_REQUEST['h'];
                 if ($a == "") {
                     echo "<p>Inserta los valores</p>";
-                } elseif ($a == 0) {
-                    echo "<p>Esa ecuación no tiene solución real.</p>";
                 } else {
                     echo "t = ", (sqrt((2*$a)/9.81)), " s";
                 }
