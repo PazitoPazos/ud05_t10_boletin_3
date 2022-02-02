@@ -20,7 +20,7 @@
             $b = $_REQUEST['b'];
             $c = $_REQUEST['c'];
             $res=($a + $b + $c)/3;
-                if ($a == "" || $b == "" || $c == "") {
+                if (!is_numeric($a) || !is_numeric($b) || !is_numeric($c)) {
                     echo "<p>Inserta los valores</p>";
                 } elseif ($res >= 9) {
                     echo "<p>Sobresaliente</p>";
