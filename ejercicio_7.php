@@ -19,7 +19,7 @@
             $a = $_REQUEST['a'];
             $b = $_REQUEST['b'];
             $c = $_REQUEST['c'];
-                if ($a == "" || $b == "" || $c == "") {
+                if (!is_numeric($a) || !is_numeric($b) || !is_numeric($c)) {
                     echo "<p>Inserta los valores</p>";
                 } else {
                     $res=($a + $b + $c)/3;
