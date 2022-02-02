@@ -16,10 +16,10 @@
         <?php
             $g = 9.81;
             $a = $_REQUEST['h'];
-                if ($a == "") {
+                if (!is_numeric($a)) {
                     echo "<p>Inserta los valores</p>";
                 } else {
-                    echo "t = ", (sqrt((2*$a)/9.81)), " s";
+                    echo "t = ", (sqrt((2*$a)/$g)), " s";
                 }
         ?>
     </body>
