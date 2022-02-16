@@ -6,7 +6,7 @@
     </head>
     <body>
         <h3>Ejercicio 19</h3>
-        <p>Escribe un programa que diga cuál es la primera cifra de un número entero introducido por teclado. Se permiten números de hasta 5 cifras.</p>
+        <p>Realiza un programa que diga si un número entero positivo introducido por teclado es capicúa. Se permiten números de hasta 5 cifras.</p>
             <form action="ejercicio_19.php" method="post">
             <p>
                 <p>Número: <input type="text" name="a" size="3" value=""></p>
