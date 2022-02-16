@@ -19,10 +19,13 @@
             $a = $_REQUEST['a'] != "" ? intval($_REQUEST['a']) : "";
             $b = $_REQUEST['b'] != "" ? intval($_REQUEST['b']) : "";
             $c = $_REQUEST['c'] != "" ? intval($_REQUEST['c']) : "";
+            $nums = array();
             if (!is_int($a) || !is_int($b) || !is_int($c)) {
                 echo "<p>Introduce tres valores enteros</p>";
             } else {
-                echo "<p>Números ($a / $b / $c)</p>";
+                array_push($nums, $a, $b, $c);
+                sort($nums);
+                echo "<p>Números ordenados de menor a mayor: ".$nums[0]." > ".$nums[1]." > ".$nums[2]."</p>";
             }
         ?>
     </body>
